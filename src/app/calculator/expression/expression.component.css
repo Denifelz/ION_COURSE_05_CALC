@@ -1,0 +1,8 @@
+textarea {
+  text-align: right;
+  width: 255px;
+  resize: none;
+}
+.expression-ko {
+  background-color: #FFAAAA;
+}

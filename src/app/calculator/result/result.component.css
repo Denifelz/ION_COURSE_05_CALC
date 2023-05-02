@@ -1,0 +1,17 @@
+textarea {
+  text-align: right;
+  width: 255px;
+  resize: none;
+}
+.result-container {
+  position: relative;
+}
+.result-container::before {
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  content: 'Result:';
+}
+.result-ko {
+  background-color: #FFAAAA;
+}

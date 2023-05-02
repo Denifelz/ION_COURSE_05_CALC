@@ -1,0 +1,40 @@
+<div ng-keyup="onKeyUp($event)">
+  <div>
+    <app-expression [expression]="expression" [expressionError]="resultError"></app-expression>
+  </div>
+  <div>
+    <app-result [result]="result" [resultError]="resultError"></app-result>
+  </div>
+  <div>
+    <app-button [value]="'C'" (click)="pressClear()"></app-button>
+    <app-button [value]="'x'" (click)="pressRemove()"></app-button>
+    <app-button [value]="'('" (click)="pressOperator('(')" [split]="2"></app-button>
+    <app-button [value]="')'" (click)="pressOperator(')')" [split]="2"></app-button>
+    <app-button [value]="'/'" (click)="pressOperator('/')"></app-button>
+  </div>
+  <div>
+    <app-button [value]="'7'" (click)="pressNumber('7')"></app-button>
+    <app-button [value]="'8'" (click)="pressNumber('8')"></app-button>
+    <app-button [value]="'9'" (click)="pressNumber('9')"></app-button>
+    <app-button [value]="'*'" (click)="pressOperator('*')"></app-button>
+  </div>
+  <div>
+    <app-button [value]="'4'" (click)="pressNumber('4')"></app-button>
+    <app-button [value]="'5'" (click)="pressNumber('5')"></app-button>
+    <app-button [value]="'6'" (click)="pressNumber('6')"></app-button>
+    <app-button [value]="'-'" (click)="pressOperator('-')"></app-button>
+  </div>
+  <div>
+    <app-button [value]="'1'" (click)="pressNumber('1')"></app-button>
+    <app-button [value]="'2'" (click)="pressNumber('2')"></app-button>
+    <app-button [value]="'3'" (click)="pressNumber('3')"></app-button>
+    <app-button [value]="'+'" (click)="pressOperator('+')"></app-button>
+  </div>
+  <div>
+    <app-button [value]="'<'" (click)="pressLeft()" [split]="2"></app-button>
+    <app-button [value]="'>'" (click)="pressRight()" [split]="2"></app-button>
+    <app-button [value]="'0'" (click)="pressNumber('0')"></app-button>
+    <app-button [value]="'.'" (click)="pressNumber('.')"></app-button>
+    <app-button [value]="'='" (click)="pressEqual()"></app-button>
+  </div>
+</div>
